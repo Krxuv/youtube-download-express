@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>YoutubeDL Krxuv</title>
+    <meta name="description" content="Simple Youtube Downloader" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
+    <style>
+      .dlbut {
+        display: flex;
+        align-items: center;
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 17px;
+        padding: 0.8em 1.5em 0.8em 1.2em;
+        color: white;
+        background: #ad5389;
+        background: linear-gradient(0deg, rgba(77,54,208,1) 0%, rgba(132,116,254,1) 100%);
+        border: none;
+        box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
+        letter-spacing: 0.05em;
+        border-radius: 0.50em;
+      }
+      
+      .dlbut svg {
+        margin-right: 8px;
+      }
+      
+      .dlbut:hover {
+        box-shadow: 0 0.5em 1.5em -0.5em #4d36d0be;
+      }
+      
+      .dlbut:active {
+        box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
+      }
+      .bruh {
+        width: 10%;
+      }
+      
+      .form-control::placeholder,
+      .form-select::placeholder {
+        color: rgba(255,255,255,0.3);
+      }
+    </style>
+  </head>
+
+  <body class="bg-dark">
+    <div class="container py-3">
+      <div class="text-center">
+        <header>
+          <h1 class="text-white">YouTube Downloader</h1>
+        </header>
+        <p class="text-info">A Quick YouTube Downloader for Download Audio and Video from YouTube</p>
+      </div>
+      <main class="mt-3">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6">
+            <form action="/">
+              <div class="mb-3">
+                <label for="url" class="form-label text-bg-dark border border-secondary p-1 w-100 text-center rounded"><strong>Insert your YouTube URL's below</strong></label>
+                <input name="url" type="url" class="form-control bg-dark text-info shadow-sm border-secondary" id="url" placeholder="https://youtu.be/abcdefg" required />
+              </div>
+              <div class="mb-3">
+                <label for="filter" class="form-label text-bg-dark border border-secondary p-1 w-100 rounded text-center"><strong>Select Filter</strong></label>
+                <select name="filter" id="filter" class="form-select text-bg-dark shadow-sm border-secondary">
+                  <option value="audioandvideo">audioandvideo</option>
+                  <option value="audioonly">audioonly</option>
+                  <option value="videoonly">videoonly</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="quality" class="form-label text-bg-dark border border-secondary p-1 text-center w-100 rounded"><strong>Select Quality</strong></label>
+                <select name="quality" id="quality" class="form-select text-bg-dark shadow-sm border-secondary">
+                  <option value="highestaudio">highestaudio</option>
+                  <option value="lowestaudio">lowestaudio</option>
+                  <option value="highestvideo">highestvideo</option>
+                  <option value="lowestvideo">lowestvideo</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="contenttype" class="form-label text-bg-dark fw-b p-1 border border-secondary text-center w-100 rounded"><strong>Select Content Type</strong></label>
+                <select name="contenttype" class="form-select text-bg-dark shadow-sm border-secondary" id="selectContentType">
+                  <option value="video/mp4">Video (MP4)</option>
+                  <option value="audio/mpeg">Audio (MP3)</option>
+                </select>
+              </div>
+              <button type="submit" class="dlbut">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M1 14.5a6.496 6.496 0 0 1 3.064-5.519 8.001 8.001 0 0 1 15.872 0 6.5 6.5 0 0 1-2.936 12L7 21c-3.356-.274-6-3.078-6-6.5zm15.848 4.487a4.5 4.5 0 0 0 2.03-8.309l-.807-.503-.12-.942a6.001 6.001 0 0 0-11.903 0l-.12.942-.805.503a4.5 4.5 0 0 0 2.029 8.309l.173.013h9.35l.173-.013zM13 12h3l-4 5-4-5h3V8h2v4z"></path></svg>
+                <span>Download</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
